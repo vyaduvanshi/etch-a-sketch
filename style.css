@@ -1,0 +1,19 @@
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 640px;
+    height: 640px;
+    display: flex;
+    justify-content: flex-start;
+    
+}
+
+.childdiv {
+    border-style: solid;
+    border-color: black;
+    /* width: 10px;
+    height: 10px; */
+}
