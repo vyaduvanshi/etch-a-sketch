@@ -47,17 +47,17 @@ function addGrid(gridsize){
     childs.forEach(child => {
         let [rgb1, rgb2, rgb3] = retRandomRGB();
 
-        // Adding black color trail
-        child.addEventListener('mouseover', () => {
-            child.style.backgroundColor = '#000';
-            opaque_count += 10;
-            child.style.opacity = opaque_count + '%';
-        });
-        
-        //Adding random RGB trail
+        // // Adding black color trail
         // child.addEventListener('mouseover', () => {
-        //     child.style.backgroundColor = `rgb(${rgb1}, ${rgb2}, ${rgb3})`;
+        //     child.style.backgroundColor = '#000';
+        //     opaque_count += 10;
+        //     child.style.opacity = opaque_count + '%';
         // });
+        
+        // Adding random RGB trail
+        child.addEventListener('mouseover', () => {
+            child.style.backgroundColor = `rgb(${rgb1}, ${rgb2}, ${rgb3})`;
+        });
 });
 }
 
